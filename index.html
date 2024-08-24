@@ -12,21 +12,25 @@
         width: 45px;
         height: 50px;
     }
+
     .rad1 {
         display: flex;
         justify-content: center;
         width: 600px;
     }
+
     .rad2 {
         display: flex;
         justify-content: center;
         width: 600px;
     }
+
     .rad3 {
         display: flex;
         justify-content: center;
         width: 600px;
     }
+
     .tekst {
         font-family: 'Courier New';
         margin-top: 40px;
@@ -39,17 +43,20 @@
         color: greenyellow;
         padding: 5px;
     }
+
     .tast {
         border: 2px solid black;
         background-color: black;
         width: 600px;
     }
+
     .ramme {
         border: 3px solid black;
         width: 700px;
         height: 500px;
         background-color: blanchedalmond;
     }
+
     .rammeTast {
 
         background-color: blue;
@@ -59,17 +66,20 @@
         margin-top: 20px;
         padding: 5px;
     }
+
     .btnrgb {
         height: 30px;
         margin-left: 10px;
 
         align-items: center;
     }
+
     .restart {
         height: 30px;
         align-items: center;
         margin-left: 590px;
     }
+
     #btnframe {
         display: flex;
         margin-top: 7px;
@@ -131,22 +141,20 @@
 
     <script>
         const taster = document.getElementById("box");
+        const rgb = document.getElementById('rgbtast');
         function tastatur(htmlElement) {
             let lettersPressed = htmlElement.innerHTML;
             taster.innerHTML += lettersPressed;
         }
         function setColor() {
-            let rgb = document.getElementById('rgbtast');
             rgb.style.backgroundColor = "red";
             setTimeout(setColorBlue, 500);
         }
         function setColorBlue() {
-            let rgb = document.getElementById('rgbtast');
             rgb.style.backgroundColor = "blue";
             setTimeout(setColorGreen, 500);
         }
         function setColorGreen() {
-            let rgb = document.getElementById('rgbtast');
             rgb.style.backgroundColor = "green";
             setTimeout(setColor, 500);
         }
@@ -155,4 +163,5 @@
         }
     </script>
 </body>
+
 </html>
