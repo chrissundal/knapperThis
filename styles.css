@@ -1,0 +1,64 @@
+button {
+    margin: 2px;
+    width: 45px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.rad1 {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
+.rad2 {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
+.rad3 {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
+.tekst {
+    font-family: 'Courier New';
+    margin-top: 40px;
+    margin-left: 45px;
+    width: 600px;
+    height: 400px;
+    border: 2px solid greenyellow;
+    font-size: larger;
+    background-color: black;
+    color: greenyellow;
+    padding: 5px;
+}
+.tast {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    width: 600px;
+}
+.ramme {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 700px;
+    height: 500px;
+    background-color: blanchedalmond;
+}
+.rammeTast {
+    width: 605px;
+    height: 165px;
+    margin-left: 42px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.restart {
+    height: 30px;
+    align-items: center;
+    margin-left: 645px;
+    margin-top: 5px;
+    font-size: x-small;
+}

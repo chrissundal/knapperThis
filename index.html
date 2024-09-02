@@ -5,163 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <style>
-    button {
-        margin: 2px;
-        width: 45px;
-        height: 50px;
-    }
-
-    .rad1 {
-        display: flex;
-        justify-content: center;
-        width: 600px;
-    }
-
-    .rad2 {
-        display: flex;
-        justify-content: center;
-        width: 600px;
-    }
-
-    .rad3 {
-        display: flex;
-        justify-content: center;
-        width: 600px;
-    }
-
-    .tekst {
-        font-family: 'Courier New';
-        margin-top: 40px;
-        margin-left: 45px;
-        width: 600px;
-        height: 400px;
-        border: 2px solid greenyellow;
-        font-size: larger;
-        background-color: black;
-        color: greenyellow;
-        padding: 5px;
-    }
-
-    .tast {
-        border: 2px solid black;
-        background-color: black;
-        width: 600px;
-    }
-
-    .ramme {
-        border: 3px solid black;
-        width: 700px;
-        height: 500px;
-        background-color: blanchedalmond;
-    }
-
-    .rammeTast {
-
-        background-color: blue;
-        width: 605px;
-        height: 165px;
-        margin-left: 42px;
-        margin-top: 20px;
-        padding: 5px;
-    }
-
-    .btnrgb {
-        height: 30px;
-        margin-left: 10px;
-
-        align-items: center;
-    }
-
-    .restart {
-        height: 30px;
-        align-items: center;
-        margin-left: 590px;
-    }
-
-    #btnframe {
-        display: flex;
-        margin-top: 7px;
-    }
+ 
+    
 </style>
 
 <body>
-
-    <div class="ramme">
-        <div class="tekst" id="box"></div>
-        <div id="btnframe">
-            <button class="btnrgb" onclick="setColor()">RGB</button>
-            <button class="restart" onclick="stopColor()">Reset DOS</button>
-        </div>
-    </div>
-    <div class="rammeTast" id="rgbtast">
-        <div class="tast">
-            <div class="rad1">
-                <button onclick="tastatur(this)">Q</button>
-                <button onclick="tastatur(this)">W</button>
-                <button onclick="tastatur(this)">E</button>
-                <button onclick="tastatur(this)">R</button>
-                <button onclick="tastatur(this)">T</button>
-                <button onclick="tastatur(this)">Y</button>
-                <button onclick="tastatur(this)">U</button>
-                <button onclick="tastatur(this)">I</button>
-                <button onclick="tastatur(this)">O</button>
-                <button onclick="tastatur(this)">P</button>
-                <button onclick="tastatur(this)">Å</button>
-                <button onclick="tastatur(this)">¨</button>
-            </div>
-            <div class="rad2">
-                <button onclick="tastatur(this)">A</button>
-                <button onclick="tastatur(this)">S</button>
-                <button onclick="tastatur(this)">D</button>
-                <button onclick="tastatur(this)">F</button>
-                <button onclick="tastatur(this)">G</button>
-                <button onclick="tastatur(this)">H</button>
-                <button onclick="tastatur(this)">J</button>
-                <button onclick="tastatur(this)">K</button>
-                <button onclick="tastatur(this)">L</button>
-                <button onclick="tastatur(this)">Ø</button>
-                <button onclick="tastatur(this)">Æ</button>
-            </div>
-            <div class="rad3">
-                <button onclick="tastatur(this)">Z</button>
-                <button onclick="tastatur(this)">X</button>
-                <button onclick="tastatur(this)">C</button>
-                <button onclick="tastatur(this)">V</button>
-                <button onclick="tastatur(this)">B</button>
-                <button onclick="tastatur(this)">N</button>
-                <button onclick="tastatur(this)">M</button>
-                <button onclick="tastatur(this)">,</button>
-                <button onclick="tastatur(this)">.</button>
-                <button onclick="tastatur(this)">-</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const taster = document.getElementById("box");
-        const rgb = document.getElementById('rgbtast');
-        function tastatur(htmlElement) {
-            let lettersPressed = htmlElement.innerHTML;
-            taster.innerHTML += lettersPressed;
-        }
-        function setColor() {
-            rgb.style.backgroundColor = "red";
-            setTimeout(setColorBlue, 500);
-        }
-        function setColorBlue() {
-            rgb.style.backgroundColor = "blue";
-            setTimeout(setColorGreen, 500);
-        }
-        function setColorGreen() {
-            rgb.style.backgroundColor = "green";
-            setTimeout(setColor, 500);
-        }
-        function stopColor() {
-            location.reload();
-        }
-    </script>
+    <div id="app"></div>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
