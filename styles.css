@@ -3,6 +3,7 @@ button {
     width: 45px;
     height: 50px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .rad1 {
@@ -58,7 +59,17 @@ button {
 .restart {
     height: 30px;
     align-items: center;
-    margin-left: 645px;
-    margin-top: 5px;
+    margin-left: 7px;
+    margin-top: 7px;
     font-size: x-small;
+}
+.start {
+    height: 30px;
+    align-items: center;
+    margin-left: 593px;
+    margin-top: 7px;
+    font-size: x-small;
+}
+.btnframe{
+    display: flex;
 }
