@@ -76,7 +76,9 @@ function createThirdTast() {
 }
 
 function powerPc() {
-    setTimeout(firstStartUpPc, 1000)
+    startMessage = `<img src="dos.png" class="bilde"/>`;
+    setTimeout(firstStartUpPc, 3000)
+    updateView();
 }
 function firstStartUpPc() {
     startMessage = 'Boot'
